@@ -1,0 +1,84 @@
+.container{
+    height: 800px;
+    width: 794px;
+    position: relative;
+    color: black;
+    border: 5px solid black;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.details{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: "Lucida Console",Courier,monospace;
+    font-size: 18px;
+    width: 730px;
+}
+.data1{
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    width: 700px;
+    font-family: "Lucida Console",Courier,monospace;
+    font-size: 18px;
+}
+.data2{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    width: 700px;
+    font-family: "Lucida Console",Courier,monospace;
+    font-size: 18px;
+}
+.data3{
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    width: 700px;
+    font-family: "Lucida Console",Courier,monospace;
+    font-size: 18px;
+}
+.data4{
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    width: 700px;
+    font-family: "Lucida Console",Courier,monospace;
+    font-size: 18px;
+}
+.TFtable{
+    border-collapse: collapse;
+    text-align: center;
+    width: 700px;
+    position: absolute;
+    left: 45px;
+    top: 420px;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+th{
+      display: table-cell;
+      vertical-align: inherit;
+      font-weight: bold;
+      text-align: -internal-center;
+}
+table{
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.TFtable tr:nth-child(odd){
+    background: #b8d1f3;
+}
+.TFtable tr:nth-child(even){
+    background: #ffffb8;
+}

@@ -1,0 +1,79 @@
+<link type = "text/css" rel = "stylesheet" href="/static/certificate.css">
+<div class="container">
+    <img src="/static/img/logo.png" alt="show" style="width: 400px;opacity: 0.1;position: absolute;
+                                                                        left: 200px;top: 190px;">
+    <p style="width: 748px;position: absolute;top: 8;left: 20px;font-size: 31px;text-align: center;
+                                                            font-family: stencial std,fangsong;">
+        <b>Biju Patnaik University of Technology ,Odisha<br>Rourkela</b>
+    </p>
+    <div class="details">
+        <u>STUDENT RESULT SUMMARY</u>           
+    </div>
+    {% for info in result1 %}
+        {% if info.Password == psw and info.Email == uname %}
+        <div class="data1">    
+            College Name : IMIT,Cuttack<br><br>
+        </div>
+        <div class="data2">
+            Student Roll :{{info.Student_Roll}}<br><br>
+        </div>
+        <div class="data3">    
+            Course Name  :{{info.Course_Name}}<br><br>
+        </div>
+        <div class="data4">
+            Student Name :{{info.Student_Name}}<br><br>
+        </div>          
+        {% endif %}      
+    {% endfor %}   
+    <div>
+        <table class="TFtable" border='1' cellpadding='5' size='90'>
+        <tbody>
+            <tr>
+                <th width="100">Sl.No</th>
+                <th width="200">Subject Code</th>
+                <th width="300">Subject</th>
+                <th width="400">Mark</th>
+            </tr>
+            {% for mark in result %}
+                {% if mark.Password == psw and mark.Email == uname %}
+                    <tr>
+                        <td>1</td>
+                        <td>MCA011001</td>
+                        <td>Discrete Mathematic</td>
+                        <td>{{mark.DM}}</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MCA011002</td>
+                        <td>Computer System Architcture</td>
+                        <td>{{mark.CSA}}</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>MCA011003</td>
+                        <td>C and Data Structure</td>
+                        <td>{{mark.CDS}}</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>MCA011004</td>
+                        <td>Database Enginnering</td>
+                        <td>{{mark.DE}}</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>MCA011005</td>
+                        <td>Operating System</td>
+                        <td>{{mark.OS}}</td>
+                    </tr>
+                {% endif %}      
+            {% endfor %} 
+        </tbody>
+        </table><br>
+    </div>
+        <img  style="width: 90px;position: absolute;top: 690px;left: 665px;" src="/static/img/sign.png">
+        <img  style="width: 90px;position: absolute;top: 690px;left: 350px;" src="/static/img/oval.png">
+        <p style="width: 145px;position: absolute;top: 700px;left: 23px;">Dated : 30 April 2010</p>
+        <p style="width: 145px;position: absolute;top: 765px;left: 345px;">0920901093654</p>
+        <p style="width: 145px;position: absolute;top: 760px;left: 655px;">Vice - Chancellor</p>
+</div>

@@ -1,0 +1,28 @@
+<link type="text/css" rel="stylesheet" href="/static/style.css">
+<body>
+    <div id="header">
+        <h1>INSTITUTE OF MANAGEMENT AND INFORMATION TECHNOLOGY , Cuttack</h1>
+    </div>
+    <div id="navbar">
+        <ul>
+            <li class ="{% if request.path == '/' %} active {% endif %}"><a href="{% url 'index' %}">Home</a></li>
+            <li class ="{% if request.path == '/notices/' %} active {% endif %}"><a href="{% url 'notices' %}">Notices</a></li>
+            <li class ="{% if request.path == '/admission/' %} active {% endif %}"><a href="{% url 'admission' %}">Admissions</a>
+                <ul>
+                    <li class ="{% if request.path == '/login/' %} active {% endif %}"><a href="{% url 'login' %}">Certificate</a></li>
+                </ul>
+            </li>
+            <li class ="{% if request.path == '/facilities/' %} active {% endif %}"><a href="{% url 'facilities' %}">Facilities</a>
+                <ul>
+                    <li class ="{% if request.path == '/placement/' %} active {% endif %}"><a href="{% url 'placement' %}">Placement</a></li>
+                    <li class ="{% if request.path == '/library/' %} active {% endif %}"><a href="{% url 'library' %}">library</a></li>
+                    <li class ="{% if request.path == '/computerlab/' %} active {% endif %}"><a href="{% url 'computerlab' %}">Computer Lab</a></li>
+                    <li class ="{% if request.path == '/boyshostel/' %} active {% endif %}"><a href="{% url 'boyshostel' %}">Boys Hostel</a></li>
+                    <li class ="{% if request.path == '/ladieshostel/' %} active {% endif %}"><a href="{% url 'ladieshostel' %}">Ladies Hostel</a></li>
+            
+                </ul>
+            </li>
+            <li class ="{% if request.path == '/contact/' %} active {% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </div>
+</body>

@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+<div class="notices_main">
+    <H2><CENTER><u>NOTICES</u></CENTER></H2>
+    <div style="padding:10px; padding-left:180px">
+        <marquee scrollamount="10" height="200px" width="500px" direction="up" scrolldelay="250" onmouseover="stop()" onmouseout="start()">
+            <a style="color:blue; text-decoration: none;"  href="{% url 'index' %}" target="_blank">Welcome to IMIT College</a>
+                <img src=/static/img/newicon.gif alt height="14" width="30"><br><br>
+            <a style="color:blue; text-decoration: none;"  href="{% url 'admission' %}">Admissions open</a>
+                <img src=/static/img/newicon.gif alt height="14" width="30"><br><br>
+            <a style="color:blue; text-decoration: none;"  href="{% url 'notices' %}">Notices</a>
+                <img src=/static/img/newicon.gif alt height="14" width="30"><br><br>
+            <a style="color:blue; text-decoration: none;"  href="{% url 'index' %}">Welcome to IMIT Collge</a>
+                <img src=/static/img/newicon.gif alt height="14" width="30"><br><br>
+            <a style="color:blue; text-decoration: none;"  href="{% url 'admission' %}">Admissions open</a>
+                <img src=/static/img/newicon.gif alt height="14" width="30"><br><br>
+            <a style="color:blue; text-decoration: none;"  href="{% url 'notices' %}">Notices</a>
+                <img src=/static/img/newicon.gif alt height="14" width="30"><br><br>
+            <a style="color:blue; text-decoration: none;"  href="{% url 'admission' %}">Admissions open</a>
+                <img src=/static/img/newicon.gif alt height="14" width="30"><br><br>
+            <a style="color:blue; text-decoration: none;"  href="{% url 'notices' %}">Notices</a>
+                <img src=/static/img/newicon.gif alt height="14" width="30"><br><br>
+            <a style="color:blue; text-decoration: none;"  href="{% url 'index' %}">Welcome to IMIT Collge</a>
+                <img src=/static/img/newicon.gif alt height="14" width="30">
+        </marquee>
+    </div>
+</div>
+{% include 'footer.html' %}

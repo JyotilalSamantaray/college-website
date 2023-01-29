@@ -1,0 +1,61 @@
+.boyshostel_main{
+  background-color: #e5e4d7;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  width: 96%;
+  height: 1160px;
+}
+img{
+  display: inline;
+  height: 500px;
+  width: 1180px;
+  border-radius: 5px;
+  padding-top: 15px;
+}
+p{
+  font-size: 18px;
+}
+.body{
+  font-size: 40px;
+  font-family: TimesNewRoman;
+  background-color: #95968e;
+  border-radius: 5px;
+}
+.TFtable {
+  border-collapse: collapse;
+  margin-left: 35px;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+.TFtable tr:nth-child(odd) {
+  background: #b8d1f3;
+}
+.TFtable tr:nth-child(even) {
+  background: #ffffb8;
+}
+.msg{
+  font-size: 17px;
+  padding-left: 50px;
+  padding-right: 138px;
+}

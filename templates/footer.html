@@ -1,0 +1,10 @@
+<div id="footer">
+    <ul>
+        <li class ="{% if request.path == '/' %} active {% endif %}"><a href="{% url 'index' %}">Home</a></li>
+        <li class ="{% if request.path == '/notices/' %} active {% endif %}"><a href="{% url 'notices' %}">Notices</a></li>
+        <li class ="{% if request.path == '/admission/' %} active {% endif %}"><a href="{% url 'admission' %}">Admissions</a></li>
+        <li class ="{% if request.path == '/facilities/' %} active {% endif %}"><a href="{% url 'facilities' %}">Facilities</a></li>
+        <li class ="{% if request.path == '/contact/' %} active {% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+    &copy; 2022 Institute of Management and Information Technology All Rights Reserved
+</div>
